@@ -1,0 +1,1 @@
+json.array! @supply_variants, partial: 'supply_variants/supply_variant', as: :supply_variant

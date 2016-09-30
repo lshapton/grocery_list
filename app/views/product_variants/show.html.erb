@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>External:</strong>
+  <%= @product_variant.external_id %>
+</p>
+
+<p>
+  <strong>Product external:</strong>
+  <%= @product_variant.product_external_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product_variant.title %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product_variant.price %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @product_variant.sku %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @product_variant.position %>
+</p>
+
+<p>
+  <strong>Inventory policy:</strong>
+  <%= @product_variant.inventory_policy %>
+</p>
+
+<p>
+  <strong>Fulfillment service:</strong>
+  <%= @product_variant.fulfillment_service %>
+</p>
+
+<p>
+  <strong>Inventory management:</strong>
+  <%= @product_variant.inventory_management %>
+</p>
+
+<p>
+  <strong>Barcode:</strong>
+  <%= @product_variant.barcode %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @product_variant.image_id %>
+</p>
+
+<p>
+  <strong>Inventory quantity:</strong>
+  <%= @product_variant.inventory_quantity %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @product_variant.weight %>
+</p>
+
+<p>
+  <strong>Weight unit:</strong>
+  <%= @product_variant.weight_unit %>
+</p>
+
+<p>
+  <strong>Old inventory quantity:</strong>
+  <%= @product_variant.old_inventory_quantity %>
+</p>
+
+<p>
+  <strong>Requires shipping:</strong>
+  <%= @product_variant.requires_shipping %>
+</p>
+
+<%= link_to 'Edit', edit_product_variant_path(@product_variant) %> |
+<%= link_to 'Back', product_variants_path %>

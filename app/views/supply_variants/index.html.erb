@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Supply Variants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @supply_variants.each do |supply_variant| %>
+      <tr>
+        <td><%= supply_variant.title %></td>
+        <td><%= link_to 'Show', supply_variant %></td>
+        <td><%= link_to 'Edit', edit_supply_variant_path(supply_variant) %></td>
+        <td><%= link_to 'Destroy', supply_variant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Supply Variant', new_supply_variant_path %>

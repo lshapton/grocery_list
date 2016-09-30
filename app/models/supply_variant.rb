@@ -1,0 +1,2 @@
+class SupplyVariant < ApplicationRecord
+end

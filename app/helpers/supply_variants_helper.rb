@@ -1,0 +1,2 @@
+module SupplyVariantsHelper
+end

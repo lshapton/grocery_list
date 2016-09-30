@@ -1,0 +1,97 @@
+<%= form_for(product_variant) do |f| %>
+  <% if product_variant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product_variant.errors.count, "error") %> prohibited this product_variant from being saved:</h2>
+
+      <ul>
+      <% product_variant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :external_id %>
+    <%= f.text_field :external_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :product_external_id %>
+    <%= f.text_field :product_external_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sku %>
+    <%= f.text_field :sku %>
+  </div>
+
+  <div class="field">
+    <%= f.label :position %>
+    <%= f.text_field :position %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventory_policy %>
+    <%= f.text_field :inventory_policy %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fulfillment_service %>
+    <%= f.text_field :fulfillment_service %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventory_management %>
+    <%= f.text_field :inventory_management %>
+  </div>
+
+  <div class="field">
+    <%= f.label :barcode %>
+    <%= f.text_field :barcode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_id %>
+    <%= f.text_field :image_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventory_quantity %>
+    <%= f.text_field :inventory_quantity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight_unit %>
+    <%= f.text_field :weight_unit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :old_inventory_quantity %>
+    <%= f.text_field :old_inventory_quantity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :requires_shipping %>
+    <%= f.check_box :requires_shipping %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

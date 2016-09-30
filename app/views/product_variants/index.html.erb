@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Product Variants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>External</th>
+      <th>Product external</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Sku</th>
+      <th>Position</th>
+      <th>Inventory policy</th>
+      <th>Fulfillment service</th>
+      <th>Inventory management</th>
+      <th>Barcode</th>
+      <th>Image</th>
+      <th>Inventory quantity</th>
+      <th>Weight</th>
+      <th>Weight unit</th>
+      <th>Old inventory quantity</th>
+      <th>Requires shipping</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @product_variants.each do |product_variant| %>
+      <tr>
+        <td><%= product_variant.external_id %></td>
+        <td><%= product_variant.product_external_id %></td>
+        <td><%= product_variant.title %></td>
+        <td><%= product_variant.price %></td>
+        <td><%= product_variant.sku %></td>
+        <td><%= product_variant.position %></td>
+        <td><%= product_variant.inventory_policy %></td>
+        <td><%= product_variant.fulfillment_service %></td>
+        <td><%= product_variant.inventory_management %></td>
+        <td><%= product_variant.barcode %></td>
+        <td><%= product_variant.image_id %></td>
+        <td><%= product_variant.inventory_quantity %></td>
+        <td><%= product_variant.weight %></td>
+        <td><%= product_variant.weight_unit %></td>
+        <td><%= product_variant.old_inventory_quantity %></td>
+        <td><%= product_variant.requires_shipping %></td>
+        <td><%= link_to 'Show', product_variant %></td>
+        <td><%= link_to 'Edit', edit_product_variant_path(product_variant) %></td>
+        <td><%= link_to 'Destroy', product_variant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product Variant', new_product_variant_path %>
